@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    background-color: rgb(245, 203, 111);
+}
+header{
+    background-color: rgb(245, 203, 111);
+     /*border-bottom: 1px solid #ccc;*/
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+    background-color: rgb(245, 203, 111);
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+ul{
+    padding: 0;
+    /*border-top: 1px solid #000000;*/
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    /*border: 1px solid #666;*/
+    background-color: rgb(245, 203, 111);
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+
+.Button-style {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    display: inline-block;
+    padding: 0.4em 1em 0.2em;
+    color: #ffffff;
+    border: #ffffff dashed 1px;
+    box-shadow: 0 0 0 0.2em #f59b14;
+    border-radius: 2.5px;
+    background-color: #f59b14;
+    cursor: pointer;
+  }
+
+  .btn{
+      text-align: center;
+      margin: 24px 0 0;
+  }
+
+  .ai{
+    margin: 24px 24px 24px;
+  }
+
+  .judge{
+      text-align: center;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+  /* 
+  h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 15px #FF6694;
+    font-size: 58px;
+    font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+  }
+  */
+
+  @import url(https://fonts.googleapis.com/css?family=Nixie+One);
+
+  .ribbon {
+    font-family: 'Nixie One', cursive;
+    font-size: 36px;
+   width: 50%;
+      
+   position: relative;
+   background: #e26878;
+   color: #fff;
+   text-align: center;
+   padding: 1em 2em; /* Adjust to suit */
+   margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  }
+  .ribbon:before, .ribbon:after {
+   content: "";
+   position: absolute;
+   display: block;
+   bottom: -1em;
+   border: 1.5em solid #e26878;
+   z-index: -1;
+  }
+  .ribbon:before {
+   left: -2em;
+   border-right-width: 1.5em;
+   border-left-color: transparent;
+  }
+  .ribbon:after {
+   right: -2em;
+   border-left-width: 1.5em;
+   border-right-color: transparent;
+  }
+  .ribbon-content:before, .ribbon-content:after {
+   content: "";
+   position: absolute;
+   display: block;
+   border-style: solid;
+   border-color: #e26878 transparent transparent transparent;
+   bottom: -1em;
+  }
+  .ribbon-content:before {
+   left: 0;
+   border-width: 1em 0 0 1em;
+  }
+  .ribbon-content:after {
+   right: 0;
+   border-width: 1em 1em 0 0;
+  }

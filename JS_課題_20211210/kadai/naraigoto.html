@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>お子さんにぴったりの習い事をご提案</title>
+</head>
+<body>
+<!-- ここからHTMLの記述 -->
+<header>
+  <!--<h1>習い事を探す</h1>-->
+  <h1 class="ribbon">
+    <span class="ribbon-content">習い事を探す</span>
+ </h1>
+</header>
+<!-- ここからHTMLボタンの記述 -->
+<main>
+  <ul>
+    <li id="gu_btn"><img src="img/english.jpg" width="450"></li>
+    <li id="cho_btn"><img src="img/program.jpg" width="450"></li>
+    <li id="par_btn"><img src="img/sports.jpg" width="450"></li>
+  </ul>
+
+  <div class="ai">AIのレコメンドは「<span id="pc_hands">なに？</span>」</div>
+
+  <div class="judge" id="judgment"></div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <div class="btn"><butto class="Button-style" type=“button” onclick="basicSample()">資料請求をする</butto></div>
+
+</main>
+
+<footer></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<script>
+
+
+//じゃんけん用のSCRIPTを書いてください
+//アラート
+$("#gu_btn").on("click",function basicSample(){
+  swal("近くのバイリンガル教室でおすすめはこちら！！！");
+});
+    
+$("#cho_btn").on("click",function basicSample(){
+  swal("Good job!!セカイを変えましょう！！");
+});
+
+$("#par_btn").on("click",function basicSample(){
+  swal("話題の「非認知能力も育てられるスポーツ教室」はこちら！");
+});
+    
+
+//ランダム関数でクリックされると1-3のどれかが選ばれる
+$("#gu_btn").on("click",function(){
+ let A = Math.ceil( Math.random() *3);　//ランダムな0-5の数字を作る、ceilで切り上げ
+console.log(A) //コンソールに表示する
+//自分のa-bと1-3の組み合わせの定義 もしa-1だったら負けなど
+if (A == 1) {
+  outcomeA = "EtonHouse International Pre-School ・ Tokyo";
+}
+if (A == 2) outcomeA = "EtonHouse International Pre-School ・ Tokyo";
+if (A == 3) outcomeA = "EtonHouse International Pre-School ・ Tokyo";
+console.log(outcomeA)
+$("#pc_hands").html(outcomeA);
+if(A==1){
+  $("#judgment").html('<img src="img/download-1.jpg" width="600">');
+}else if(A==2){
+  $("#judgment").html('<img src="img/download-1.jpg" width="600">');
+}else if(A==3){
+  $("#judgment").html('<img src="img/download-1.jpg" width="600">');
+}
+});
+    
+$("#cho_btn").on("click",function(){
+ let B = Math.ceil( Math.random() *3);　//ランダムな0-5の数字を作る、ceilで切り上げ
+console.log(B) //コンソールに表示する
+if (B == 1) outcomeB = "チーズアカデミー東京";
+if (B == 2) outcomeB = "チーズアカデミー札幌";
+if (B == 3) outcomeB = "チーズアカデミー福岡";
+console.log(outcomeB)
+$("#pc_hands").html(outcomeB);
+if(B==2){
+  $("#judgment").html('<img src="img/header_logo.png" width="600">');
+}else if(B==3){
+  $("#judgment").html('<img src="img/header_logo.png" width="600">');
+}else if(B==1){
+  $("#judgment").html('<img src="img/header_logo.png" width="600">');
+}
+});
+
+$("#par_btn").on("click",function(){
+ let C = Math.ceil( Math.random() *3);　//ランダムな0-5の数字を作る、ceilで切り上げ
+console.log(C) //コンソールに表示するß
+//自分のa-bと1-3の組み合わせの定義 もしa-1だったら負けなど
+if (C == 1) outcomeC = "myGym";
+if (C == 2) outcomeC = "myGym";
+if (C == 3) outcomeC = "myGym";
+console.log(outcomeC)
+$("#pc_hands").html(outcomeC);
+if(C==3){
+  $("#judgment").html('<img src="img/download.jpg" width="600">');
+}else if(C==1){
+  $("#judgment").html('<img src="img/download.jpg" width="600">');
+}else if(C==2){
+  $("#judgment").html('<img src="img/download.jpg" width="600">');
+}
+});  
+
+
+function basicSample(){
+  swal("個人情報登録画面に進みます");
+}
+
+// 組み合わせの定義
+
+//組み合わせの結果をdivタグ内に表示させる関数をかく
+
+
+
+    
+    
+
+</script>
+</body>
+</html>
